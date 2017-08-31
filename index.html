@@ -76,6 +76,7 @@
             </div>
         </div>
         <div class="main">
+            <!-- Feature section -->
             <div class="section section-features" id="#features">
                 <div class="container">
                     <div class="row justify-content-center">
@@ -120,6 +121,41 @@
                     </div>
                 </div>
             </div>
+            <!-- End Features section -->
+            <!-- Contact section -->
+            <div class="section section-contacts" style="background-image: url('assets/img/bg11.jpg'); background-size: cover; background-position: top center; min-height: 700px;">
+                <div class="container">
+                    <div class="row">
+                        <div class="card card-contacts" data-background-color="orange">
+                            <form class="form" method="" action="">
+                                <div class="header text-center">
+                                    <h4 class="title title-up">Contacts</h4>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row justify-content-center">
+                                        <div class="col-sm-2">
+                                            <p class="category">David S</p>
+                                            <img src="assets/img/avatar.jpg" alt="Thumbnail Image" class="rounded-circle img-raised">
+                                        </div>
+                                         <div class="col-sm-2">
+                                            <p class="category">Adrien H</p>
+                                            <img src="assets/img/avatar.jpg" alt="Thumbnail Image" class="rounded-circle img-raised">
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <p class="category">Thomas B</p>
+                                            <img src="assets/img/avatar.jpg" alt="Thumbnail Image" class="rounded-circle img-raised">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="footer text-center">
+                                    <a href="mailto:thomas.baudier@creatis.insa-lyon.fr" class="btn btn-neutral btn-round btn-lg">thomas.baudier[at]creatis.insa-lyon.fr</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Contact section -->
         </div>
         <!-- Sart Modal -->
         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -224,6 +260,14 @@
         if ($('.section-features').length != 0) {
             $("html, body").animate({
                 scrollTop: $('.section-features').offset().top
+            }, 1000);
+        }
+    }
+    function scrollToContacts() {
+
+        if ($('.section-contacts').length != 0) {
+            $("html, body").animate({
+                scrollTop: $('.section-contacts').offset().top
             }, 1000);
         }
     }
