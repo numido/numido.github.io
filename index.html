@@ -75,7 +75,62 @@
                 </div>
             </div>
         </div>
-        <div class="main">
+        <div class="main">.
+            <!-- Presentation section -->
+            <div class="section section-presentation">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-10 col-lg-8 col-xl-6 ml-auto mr-auto">
+                            <p class="category">Presentation</p>
+                            <!-- Nav tabs -->
+                            <div class="card">
+                                <ul class="nav nav-tabs justify-content-center" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" data-toggle="tab" href="#home" role="tab">
+                                            <i class="now-ui-icons objects_umbrella-13"></i> For What ?
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#profile" role="tab">
+                                            <i class="now-ui-icons shopping_cart-simple"></i> Profile
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#messages" role="tab">
+                                            <i class="now-ui-icons shopping_shop"></i> Messages
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#settings" role="tab">
+                                            <i class="now-ui-icons ui-2_settings-90"></i> Settings
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="card-body">
+                                    <!-- Tab panes -->
+                                    <div class="tab-content text-center">
+                                        <div class="tab-pane active" id="home" role="tabpanel">
+                                            <p>Numido allows you to perform dosimetry evaluation very easily.</p>
+                                        </div>
+                                        <div class="tab-pane" id="profile" role="tabpanel">
+                                            <p> I will be the leader of a company that ends up being worth billions of dollars, because I got the answers. I understand culture. I am the nucleus. I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at. I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at. </p>
+                                        </div>
+                                        <div class="tab-pane" id="messages" role="tabpanel">
+                                            <p>I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at. So when you get something that has the name Kanye West on it, it’s supposed to be pushing the furthest possibilities. I will be the leader of a company that ends up being worth billions of dollars, because I got the answers. I understand culture. I am the nucleus.</p>
+                                        </div>
+                                        <div class="tab-pane" id="settings" role="tabpanel">
+                                            <p>
+                                                "I will be the leader of a company that ends up being worth billions of dollars, because I got the answers. I understand culture. I am the nucleus. I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at."
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Prensentation section -->
             <!-- Feature section -->
             <div class="section section-features" id="#features">
                 <div class="container">
@@ -122,6 +177,39 @@
                 </div>
             </div>
             <!-- End Features section -->
+            <!-- Case Of Use section -->
+            <div class="section section-caseofuse">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12">
+                            <h2 class="title">Scintivol</h2>
+                            <h5 class="description">
+                                Numido allows you to perform dosimetry evaluation very easily.
+                            </h5>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                            <div class="icons-container">
+                                <i class="now-ui-icons ui-1_send"></i>
+                                <i class="now-ui-icons ui-2_like"></i>
+                                <i class="now-ui-icons transportation_air-baloon"></i>
+                                <i class="now-ui-icons text_bold"></i>
+                                <i class="now-ui-icons tech_headphones"></i>
+                                <i class="now-ui-icons emoticons_satisfied"></i>
+                                <i class="now-ui-icons shopping_cart-simple"></i>
+                                <i class="now-ui-icons objects_spaceship"></i>
+                                <i class="now-ui-icons media-2_note-03"></i>
+                                <i class="now-ui-icons ui-2_favourite-28"></i>
+                                <i class="now-ui-icons design_palette"></i>
+                                <i class="now-ui-icons clothes_tie-bow"></i>
+                                <i class="now-ui-icons location_pin"></i>
+                                <i class="now-ui-icons objects_key-25"></i>
+                                <i class="now-ui-icons travel_istanbul"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Case Of Use section -->
             <!-- Contact section -->
             <div class="section section-contacts" style="background-image: url('assets/img/bg11.jpg'); background-size: cover; background-position: top center; min-height: 700px;">
                 <div class="container">
@@ -255,11 +343,27 @@
         nowuiKit.initSliders();
     });
 
+    function scrollToPresentation() {
+
+        if ($('.section-presentation').length != 0) {
+            $("html, body").animate({
+                scrollTop: $('.section-presentation').offset().top
+            }, 1000);
+        }
+    }
     function scrollToFeatures() {
 
         if ($('.section-features').length != 0) {
             $("html, body").animate({
                 scrollTop: $('.section-features').offset().top
+            }, 1000);
+        }
+    }
+    function scrollToCaseOfUse() {
+
+        if ($('.section-caseofuse').length != 0) {
+            $("html, body").animate({
+                scrollTop: $('.section-caseofuse').offset().top
             }, 1000);
         }
     }
