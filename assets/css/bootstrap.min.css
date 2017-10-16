@@ -5364,7 +5364,7 @@ button.close {
     -ms-flex-pack: center;
     justify-content: center;
     width: 15%;
-    color: #3263f9;
+    color: #5c95ff;
     text-align: center;
     opacity: .5
 }
@@ -5373,7 +5373,7 @@ button.close {
 .carousel-control-next:hover,
 .carousel-control-prev:focus,
 .carousel-control-prev:hover {
-    color: #3263f9;
+    color: #5c95ff;
     text-decoration: none;
     outline: 0;
     opacity: .9
@@ -5407,7 +5407,7 @@ button.close {
 .carousel-indicators {
     position: absolute;
     right: 0;
-    bottom: 10px;
+    bottom: 2px;
     left: 0;
     z-index: 15;
     display: -ms-flexbox;
@@ -5453,18 +5453,18 @@ button.close {
 }
 
 .carousel-indicators .active {
-    background-color: #3263f9
+    background-color: #5c95ff
 }
 
 .carousel-caption {
     position: absolute;
     right: 15%;
-    bottom: 20px;
+    bottom: 5px;
     left: 15%;
     z-index: 10;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    color: #3263f9;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #5c95ff;
     text-align: center
 }
 
