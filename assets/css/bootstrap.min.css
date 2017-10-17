@@ -5,6 +5,11 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
+:root {
+  --main-bg-color: #1a90b0;
+  --main-bg-color-hover: #1a90ce;
+}
+
 @media print {
     *,
     ::after,
@@ -5364,7 +5369,7 @@ button.close {
     -ms-flex-pack: center;
     justify-content: center;
     width: 15%;
-    color: #5c95ff;
+    color: var(--main-bg-color);
     text-align: center;
     opacity: .5
 }
@@ -5373,7 +5378,7 @@ button.close {
 .carousel-control-next:hover,
 .carousel-control-prev:focus,
 .carousel-control-prev:hover {
-    color: #5c95ff;
+    color: var(--main-bg-color);
     text-decoration: none;
     outline: 0;
     opacity: .9
@@ -5429,7 +5434,7 @@ button.close {
     margin-right: 3px;
     margin-left: 3px;
     text-indent: -999px;
-    background-color: rgba(50, 99, 249, .5)
+    background-color: rgba(26, 144, 176, .5) /*var(--main-bg-color);*/
 }
 
 .carousel-indicators li::before {
@@ -5453,7 +5458,7 @@ button.close {
 }
 
 .carousel-indicators .active {
-    background-color: #5c95ff
+    background-color: var(--main-bg-color);
 }
 
 .carousel-caption {
@@ -5464,7 +5469,7 @@ button.close {
     z-index: 10;
     padding-top: 10px;
     padding-bottom: 10px;
-    color: #5c95ff;
+    color: var(--main-bg-color);
     text-align: center
 }
 
